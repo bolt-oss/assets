@@ -1,5 +1,5 @@
 {
-    "name": "bolt/assets",
+    "name": "bolt-oss/assets",
     "description": "🛠 Javascript and CSS Assets used in Bolt's backend. Do not `require` directly.",
     "type": "library",
     "license": "MIT",
@@ -10,7 +10,10 @@
         }
     ],
     "require-dev": {
-        "bolt/core": "^5.0.6"
+        "bolt-oss/core": "^5.0.6"
+    },
+    "replace": {
+        "bolt/assets": "*"
     },
     "minimum-stability": "stable",
     "prefer-stable": true
